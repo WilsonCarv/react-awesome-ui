@@ -1,9 +1,9 @@
-import { CheckboxComponent } from "../components/Checkbox/CheckboxComponent";
+import { CheckboxComponent } from '../components/Checkbox/CheckboxComponent';
 
 export default {
-    title: 'CheckboxComponent',
-    component: CheckboxComponent,
-}
+	title: 'CheckboxComponent',
+	component: CheckboxComponent
+};
 export const Primary = {
-    args: { text: 'Primary Checkbox' },
+	args: { text: 'Primary Checkbox' }
 };
