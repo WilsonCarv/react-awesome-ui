@@ -11,7 +11,7 @@ export const Primary = {
 		type: 'primary',
 		onClick: handleClick,
 		ref: null,
-		fontWeight: 'semi-bold'
+		fontWeight: 'bold'
 	}
 };
 export const Success = {
