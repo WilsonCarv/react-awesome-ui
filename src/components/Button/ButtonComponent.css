@@ -4,6 +4,11 @@
 	--danger-button-background-color: #dc3545;
 	--warning-button-background-color: #ffc107;
 	--info-button-background-color: #17a2b8;
+	--hover-primary-button-background-color: #0056b3;
+	--hover-success-button-background-color: #218838;
+	--hover-danger-button-background-color: #c82333;
+	--hover-warning-button-background-color: #e0a800;
+	--hover-info-button-background-color: #138496;
 	--button-color: #fff;
 	--button-border-radius: 4px;
 	--button-padding: 8px 16px;
@@ -23,18 +28,33 @@
 	font-family: var(--button-font-family);
 	&.primary {
 		background-color: var(--primary-button-background-color);
+		&:hover {
+			background-color: var(--hover-primary-button-background-color);
+		}
 	}
 	&.success {
 		background-color: var(--success-button-background-color);
+		&:hover {
+			background-color: var(--hover-success-button-background-color);
+		}
 	}
 	&.danger {
 		background-color: var(--danger-button-background-color);
+		&:hover {
+			background-color: var(--hover-danger-button-background-color);
+		}
 	}
 	&.warning {
 		background-color: var(--warning-button-background-color);
+		&:hover {
+			background-color: var(--hover-warning-button-background-color);
+		}
 	}
 	&.info {
 		background-color: var(--info-button-background-color);
+		&:hover {
+			background-color: var(--hover-info-button-background-color);
+		}
 	}
 	&.regular {
 		font-weight: var(--button-regular-font-weight);
