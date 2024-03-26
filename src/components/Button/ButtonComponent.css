@@ -36,7 +36,7 @@
 	&.info {
 		background-color: var(--info-button-background-color);
 	}
-	&.font-regular {
+	&.regular {
 		font-weight: var(--button-regular-font-weight);
 	}
 	&.bold {

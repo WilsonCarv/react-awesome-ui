@@ -11,6 +11,42 @@ export const Primary = {
 		type: 'primary',
 		onClick: handleClick,
 		ref: null,
-		fontWeight: 'font-regular'
+		fontWeight: 'semi-bold'
+	}
+};
+export const Success = {
+	args: {
+		text: 'Success Button',
+		type: 'success',
+		onClick: handleClick,
+		ref: null,
+		fontWeight: 'bold'
+	}
+};
+export const Danger = {
+	args: {
+		text: 'Danger Button',
+		type: 'danger',
+		onClick: handleClick,
+		ref: null,
+		fontWeight: 'semi-bold'
+	}
+};
+export const Warning = {
+	args: {
+		text: 'Warning Button',
+		type: 'warning',
+		onClick: handleClick,
+		ref: null,
+		fontWeight: 'bold'
+	}
+};
+export const Info = {
+	args: {
+		text: 'Info Button',
+		type: 'info',
+		onClick: handleClick,
+		ref: null,
+		fontWeight: 'bold'
 	}
 };
