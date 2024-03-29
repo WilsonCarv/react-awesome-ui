@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import './ButtonComponent.css';
 
-export const ButtonComponent = ({ text, type, onClick, ref, fontWeight }) => {
+export const ButtonComponent = ({ text, type, onClick, ref, fontWeight, disabled }) => {
 	const classes = `button ${type} ${fontWeight}`;
 	return (
 		<button className={classes} onClick={onClick} ref={ref}>
