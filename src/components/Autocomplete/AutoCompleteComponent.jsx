@@ -56,15 +56,17 @@ export const AutoCompleteComponent = ({ options, label, onValueChange }) => {
 				onFocus={handleFocus}
 				value={value}
 				onBlur={handleBlur}
-                className='aw-autocomplete-input'
+				className="aw-autocomplete-input"
 			/>
 			{open && (
 				<ul className="aw-autocomplete-list">
-					{filteredOptions.sort((a,b)=> a.label.localeCompare(b.label)).map(option => (
-						<li key={option.id} onClick={() => handleOptionClick(option)}>
-							{option.label}
-						</li>
-					))}
+					{filteredOptions
+						.sort((a, b) => a.label.localeCompare(b.label))
+						.map(option => (
+							<li key={option.id} onClick={() => handleOptionClick(option)}>
+								{option.label}
+							</li>
+						))}
 				</ul>
 			)}
 		</Fragment>
@@ -76,4 +78,3 @@ AutoCompleteComponent.propTypes = {
 	label: PropTypes.string.isRequired,
 	getSelectedValue: PropTypes.func
 };
-
