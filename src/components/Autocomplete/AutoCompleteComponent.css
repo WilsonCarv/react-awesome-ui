@@ -1,0 +1,31 @@
+:root {
+	--auto-complete-padding: 8px 4px 8px 4px;
+	--auto-complete-border-radius: 4px;
+	--auto-complete-border: 1px solid #ccc;
+    --auto-complete-hover-color: #f9f9f9;
+}
+
+.aw-autocomplete-input {
+	padding: var(--auto-complete-padding);
+	border: var(--auto-complete-border);
+	border-radius: var(--auto-complete-border-radius);
+	box-sizing: border-box;
+    width: 100%;
+}
+.aw-autocomplete-list{
+    padding: 0;
+    margin: 0;
+    border: var(--auto-complete-border);
+    border-radius: var(--auto-complete-border-radius);
+    box-sizing: border-box;
+    cursor: pointer;
+    max-height: 200px;
+    overflow-y: auto;
+    & li{
+        list-style: none;
+        padding: var(--auto-complete-padding);
+        &:hover{
+            background-color: var(--auto-complete-hover-color);
+        }
+    }
+}

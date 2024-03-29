@@ -15,6 +15,6 @@ PropTypes.ButtonComponent = {
 	text: PropTypes.string.isRequired,
 	type: PropTypes.string,
 	onClick: PropTypes.func,
-	ref: PropTypes.func,
+	ref: PropTypes.any,
 	fontWeight: PropTypes.string
 };
