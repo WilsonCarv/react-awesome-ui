@@ -1,18 +1,31 @@
 :root {
-	--auto-complete-padding: 8px 4px 8px 4px;
-	--auto-complete-border-radius: 4px;
-	--auto-complete-border: 1px solid #ccc;
+    --auto-complete-padding: 8px 12px;
+    --auto-complete-border-radius: 8px;
+    --auto-complete-border: 2px solid #ccc;
     --auto-complete-hover-color: #f9f9f9;
-}
-
-.aw-autocomplete-input {
-	padding: var(--auto-complete-padding);
-	border: var(--auto-complete-border);
-	border-radius: var(--auto-complete-border-radius);
-	box-sizing: border-box;
+    --auto-complete-bg-color: #fff;
+    --auto-complete-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --auto-complete-transition: 0.3s ease;
+    --auto-complete-font-family: 'Roboto', sans-serif; /* Updated font-family */
+  }
+  
+  .aw-autocomplete-input {
+    padding: var(--auto-complete-padding);
+    border: var(--auto-complete-border);
+    border-radius: var(--auto-complete-border-radius);
+    box-sizing: border-box;
     width: 100%;
-}
-.aw-autocomplete-list{
+    font-size: 16px;
+    transition: border-color var(--auto-complete-transition), box-shadow var(--auto-complete-transition);
+    box-shadow: var(--auto-complete-shadow);
+  }
+  
+  .aw-autocomplete-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+  }
+  
+  .aw-autocomplete-list {
     padding: 0;
     margin: 0;
     border: var(--auto-complete-border);
@@ -21,11 +34,28 @@
     cursor: pointer;
     max-height: 200px;
     overflow-y: auto;
-    & li{
-        list-style: none;
-        padding: var(--auto-complete-padding);
-        &:hover{
-            background-color: var(--auto-complete-hover-color);
-        }
-    }
-}
+    background-color: var(--auto-complete-bg-color);
+    box-shadow: var(--auto-complete-shadow);
+  }
+  
+  .aw-autocomplete-list li {
+    list-style: none;
+    padding: var(--auto-complete-padding);
+    transition: background-color var(--auto-complete-transition);
+    font-family: var(--auto-complete-font-family); /* Added font-family */
+  }
+  
+  .aw-autocomplete-list li:hover {
+    background-color: var(--auto-complete-hover-color);
+  }
+  
+  .aw-autocomplete-list li:first-child {
+    border-top-left-radius: var(--auto-complete-border-radius);
+    border-top-right-radius: var(--auto-complete-border-radius);
+  }
+  
+  .aw-autocomplete-list li:last-child {
+    border-bottom-left-radius: var(--auto-complete-border-radius);
+    border-bottom-right-radius: var(--auto-complete-border-radius);
+  }
+  
