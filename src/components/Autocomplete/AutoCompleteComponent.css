@@ -6,7 +6,7 @@
     --auto-complete-bg-color: #fff;
     --auto-complete-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     --auto-complete-transition: 0.3s ease;
-    --auto-complete-font-family: 'Roboto', sans-serif; /* Updated font-family */
+    --auto-complete-font-family: 'Roboto', sans-serif;
   }
   
   .aw-autocomplete-input {
@@ -42,7 +42,7 @@
     list-style: none;
     padding: var(--auto-complete-padding);
     transition: background-color var(--auto-complete-transition);
-    font-family: var(--auto-complete-font-family); /* Added font-family */
+    font-family: var(--auto-complete-font-family);
   }
   
   .aw-autocomplete-list li:hover {
